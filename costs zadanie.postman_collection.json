@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "df8cb6b4-e1c6-47e2-81fb-42e0ec57bab5",
+		"name": "costs zadanie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/costs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"costs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST new cost",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"title\": \"16\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/costs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"costs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT change the cost",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"title\": \"16\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/costs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"costs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL the cost",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"title\": \"16\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/costs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"costs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
