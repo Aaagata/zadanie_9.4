@@ -43,7 +43,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"title\": \"16\"\r\n}"
+					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"amount\": \"16\"\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:5000/costs/",
@@ -78,10 +78,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"title\": \"16\"\r\n}"
+					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": true\r\n    \r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/costs/",
+					"raw": "http://localhost:5000/costs/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -89,7 +89,7 @@
 					"port": "5000",
 					"path": [
 						"costs",
-						""
+						"2"
 					]
 				}
 			},
@@ -113,10 +113,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\": \"Marcinowi za chinczyka\",\r\n    \"done\": false,\r\n    \"title\": \"16\"\r\n}"
+					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/costs/",
+					"raw": "http://localhost:5000/costs/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -124,7 +124,7 @@
 					"port": "5000",
 					"path": [
 						"costs",
-						""
+						"1"
 					]
 				}
 			},

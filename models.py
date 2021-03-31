@@ -3,7 +3,7 @@ import json
 class Costs:
     def __init__(self):
         try:
-            with open("costs.json", "r") as f:
+            with open("C:\\Users\\aduna\\OneDrive\\Pulpit\\kodilla\\Python\\m9\\zadanie_costs\\costs.json", "r") as f:
                 self.costs = json.load(f)
         except FileNotFoundError:
             self.costs = []
@@ -28,7 +28,7 @@ class Costs:
     def update(self, id, data):
         cost = self.get(id)
         if cost:
-            index = self.costs.index(todo)
+            index = self.costs.index(cost)
             self.costs[index] = data
             self.save_all()
             return True
