@@ -22,7 +22,7 @@ class Costs:
         self.save_all()
 
     def save_all(self):
-        with open("costs.json", "w") as f:
+        with open("C:\\Users\\aduna\\OneDrive\\Pulpit\\kodilla\\Python\\m9\\zadanie_costs\\costs.json", "w") as f:
             json.dump(self.costs, f)
 
     def update(self, id, data):

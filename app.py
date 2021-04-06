@@ -47,6 +47,7 @@ def delete_cost(cost_id):
 @app.route("/costs/<int:cost_id>", methods=["PUT"])
 def update_cost(cost_id):
     cost = costs.get(cost_id)
+    print(cost)
     if not cost:
         abort(404)
     if not request.json:
@@ -61,7 +62,8 @@ def update_cost(cost_id):
     cost = {
         'amount': data.get('amount', cost['amount']),
         'description': data.get('description', cost['description']),
-        'done': data.get('done', cost['done'])
+        'done': data.get('done', cost['done']),
+        'id': data.get('id', cost_id)
     }
     costs.update(cost_id, cost)
     return jsonify({'cost': cost})
